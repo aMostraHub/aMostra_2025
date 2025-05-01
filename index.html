@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aMostra de Estatística</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="flex flex-col">
+
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
+      <h2 class="text-2xl font-bold mb-4">Participe da aMostra!</h2>
+      <p class="mb-6">Inscreva-se agora e não perca nenhum detalhe do evento.</p>
+      <button id="subscribe-btn" class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">Inscrever-se</button>
+      <button id="close-btn" class="mt-4 text-gray-500 hover:text-gray-700">Fechar</button>
+    </div>
+  </div>
+
+  <nav class="bg-red-700 border-gray-200">
+    <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4 shadow">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/~amostra/index.html"><span class="font-semibold text-xl tracking-tight">aMostra de
+            Estatística</span></a>
+      </div>
+      <button onclick="toggleMenu()" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="menu">
+        <ul
+          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
+          <li>
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Home</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/amostra.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/comissao.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/patrocinadores.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flex-grow flex items-center p-4  justify-center gap-32 h-screen bg-red-700 pb_16">
+    <div class="max-w-3xl text-center">
+      <h1 class="text-white text-3xl font-extrabold text-transparent sm:text-5xl">
+        aMostra de Estatística 2024
+      </h1>
+      <h2 class="text-xl font-bold text-white mt-2 sm:text-2xl">
+        XVII Edição
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
+        A aMostra é um evento gratuito imperdível que acontece anualmente, organizada pelos alunos do curso de Estatística do
+        IME-USP! Esse ano ela ocorrerá nos dias 30/09 a 04/10.
+      </p>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a class="block w-full rounded border border-red-600 bg-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="#sec-3">
+          Cronograma
+        </a>
+
+        <a class="block w-full rounded border border-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-red-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+          href="/~amostra/pages/amostra.html">
+          Saiba mais
+        </a>
+      </div>
+    </div>
+    <img src="styles/logo_branco_isolado.png" alt="Logo da Amostra" class="w-1/6 h-auto mb-10 md:mb-2 hidden lg:block">
+  </div>
+  <a href="#sec-2"><svg
+      class="hidden lg:block h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce"
+      viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      fill="#000000">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <title>arrow_down [#338]</title>
+        <desc>Created with Sketch.</desc>
+        <defs> </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)" fill="#ffffff">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <path
+                d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
+                id="arrow_down-[#338]"> </path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg></a>
+
+  <section id="sec-2">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+          <img alt="" src="styles/foto_palestra.jpg" class="absolute inset-0 h-full w-full object-cover" />
+        </div>
+
+        <div class="lg:py-24">
+          <h2 class="text-2xl md:text-3xl font-bold sm:text-4xl">O que é aMostra?</h2>
+
+          <p class="mt-4 text-gray-600">
+            Ah, a nossa querida aMostra! Um evento cheio de estatística, com palestras e minicursos que vão te deixar
+            animado para explorar o mundo dos dados!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto bg-red-600 text-white p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
+    <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
+    <div id="countdown" class="text-2xl sm:text-3xl">
+        <span id="days" class="px-1 sm:px-2">00</span> dias
+        <span id="hours" class="px-1 sm:px-2">00</span>h:
+        <span id="minutes" class="px-1 sm:px-2">00</span>m:
+        <span id="seconds" class="px-1 sm:px-2">00</span>s
+    </div>
+</div>
+  
+  <div class="container mx-auto py-8 px-4 md:px-44">
+    <div class="bg-white p-6 rounded-lg shadow-lg border">
+      <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação dos dias</h1>
+      <div class="flex justify-between mb-4">
+        <button id="prev" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <h2 id="day-title" class="text-xl md:text-2xl font-bold">Segunda-feira</h2>
+        <button id="next" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="carousel" class="overflow-hidden relative">
+        <div class="flex transition-transform duration-500">
+          <!-- Segunda-feira -->
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
+                  <td class="py-2 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Patrícia Viana: Análise de agrupamento por modelos de mistura 
+                    Bayesianos e distribuições a priori repulsivas
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Jony Arrais: Avaliando o impacto da temperatura na saúde humana
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    HDI Seguros: Aplicação dos Modelos de Risco na Precificação de Seguros
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Insper: <br> 
+                    Parte 1: Paulo Marques: Uma breve introdução à predição conformal <br>
+                    Parte 2: Hedibert Lopes: Estatística e Econometria Bayesiana no Insper
+                  </td>
+                </tr>
+                <tr class="text-white">
+                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
+                  </td>
+                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
+                    <strong>MINICURSO:</strong><br>
+                    Beatriz Milz: Criando mapas no R com o pacote geobr
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          
+
+
+          <!-- Adicione mais dias aqui -->
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
+                  <td class="py-2 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Marcus Estanislao: O estatístico na era de I.A.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Doris Fontes: A profissão do estatístico num mercado que tem valorizado o cientista de dados
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    M. Solutions: Principais aspectos da modelagem no âmbito do risco de crédito
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Sessão de Pôsteres
+                  </td>
+                </tr>
+                <tr class="text-white">
+                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
+                  </td>
+                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
+                    <strong>MINICURSO:</strong><br>
+                    R-Ladies São Paulo: Gráficos em R
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
+                  <td class="py-2 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Gladys Ulloa: Estatística: O motor secreto por trás da revolução da ciência de dados
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Natalia Amancio: O papel do estatístico no futuro do trabalho
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    MarketData: Do campus ao campo: resolvendo problemas reais
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Dunnhumby: Ciência de dados e inteligência artificial aplicada ao varejo
+                  </td>
+                </tr>
+                <tr class="text-white">
+                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
+                  </td>
+                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
+                    <strong>MINICURSO:</strong><br>
+                    Curso R: Análise de dados
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
+                  <td class="py-2 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Agatha Rodrigues: Estatística e políticas públicas
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Anderson Ara: Aprendizado de máquina (Machine Learning)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Serasa Experian: Datalab: Inovação dentro da Serasa Experian
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Porto Seguro: Ciência de dados na Porto Seguro
+                  </td>
+                </tr>
+                <tr class="text-white">
+                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
+                  </td>
+                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
+                    <strong>MINICURSO:</strong><br>
+                    R-Ladies Goiânia: Extensão Quarto
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">10:00 às 12:00</td>
+                  <td class="py-2 ps-6">
+                    <strong>Mesa Redonda</strong><br>
+                    Fernanda Kelly, Gabriela Sá, Mayumi Sato e Gabriela Uhrigshardt: <br>
+                    Mulheres na tecnologia
+                  </td>
+              </tbody>
+            </table>
+            
+          </div>
+          <!--  -->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 md:text-3xl">
+          Inscrição das palestras
+        </h2>
+
+        <p class="mt-4 sm:block">
+          Clique no link abaixo e realize sua inscrição unificada
+          para participar da semana da aMostra, ver todas as palestras
+          além de também ter direito ao certificado de presença!
+        </p>
+      </div>
+
+      <div class="mx-auto mt-8 max-w-xl">
+        <a href="https://forms.gle/YrmPUedwpaQtoefx7">
+          <button
+            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white ">
+            <span class="text-sm font-medium"> Se inscreva! </span>
+            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="mx-auto justify-center border shadow-lg px-6 py-10 md:px-32 mb-10 md:w-8/12 bg-white rounded-lg">
+    <h1 class="text-2xl md:text-3xl font-bold text-center mb-4 md:mb-8">Inscrições dos minicursos</h1>
+    <p class="text-center text-lg mb-6">Participe dos nossos minicursos e amplie seus conhecimentos em análise de dados e visualização. Inscreva-se para aprender com especialistas e compartilhar experiências com outros entusiastas!</p>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+      <div class="bg-gray-100 rounded-2xl p-6 transition-transform transform hover:scale-105 shadow-md">
+        <h1 class="text-2xl font-semibold text-center">Segunda-Feira</h1>
+        <p class="mt-4 text-center">Criando mapas no R com o pacote geobr.</p>
+        <a href="https://forms.gle/NdKsSoXVzVwYWc3d7" class="group mt-4 flex w-3/4 sm:w-1/2 mx-auto justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white text-center transition-colors duration-200 hover:bg-red-500">Se inscreva!</a>
+      </div>
+  
+      <div class="bg-gray-100 rounded-2xl p-6 transition-transform transform hover:scale-105 shadow-md">
+        <h1 class="text-2xl font-semibold text-center">Terça-Feira</h1>
+        <p class="mt-4 text-center">ggplot2: introdução à gramática de gráficos.</p>
+        <a href="https://forms.gle/Vdhah2MeFynNdnKZA" class="group mt-4 flex w-3/4 sm:w-1/2 mx-auto justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white text-center transition-colors duration-200 hover:bg-red-500">Se inscreva!</a>
+      </div>
+  
+      <div class="bg-gray-100 rounded-2xl p-6 transition-transform transform hover:scale-105 shadow-md">
+        <h1 class="text-2xl font-semibold text-center">Quarta-Feira</h1>
+        <p class="mt-4 text-center">Análise de dados de ponta a ponta.</p>
+        <a href="https://forms.gle/UA5qLPXWSCgm3gwp9" class="mt-4 flex w-3/4 sm:w-1/2 mx-auto justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white text-center transition-colors duration-200 hover:bg-red-500">Se inscreva!</a>
+      </div>
+  
+      <div class="bg-gray-100 rounded-2xl p-6 transition-transform transform hover:scale-105 shadow-md">
+        <h1 class="text-2xl font-semibold text-center">Quinta-Feira</h1>
+        <p class="mt-4 text-center">Analisar. Compartilhar. Reproduzir. <br> Você tem uma história para contar com dados. <br> Conte-a com o Quarto.</p>
+        <a href="https://forms.gle/evMwVTLYFPS35BJz7" class="group mt-4 flex w-3/4 sm:w-1/2 mx-auto justify-center gap-2 rounded-md bg-red-600 px-5 py-3 text-white text-center transition-colors duration-200 hover:bg-red-500">Se inscreva!</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="bg-gray-100">
+    <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="flex justify-center">
+        <img src="styles/Logo.png" alt="Logo da Amostra" class="w-10 h-auto max-w-32 mb-10 md:mb-2">
+        <h6 class="p-2">Amostra de Estatística</h6>
+      </div>
+
+      <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+        aMostra de Estatística 2024 <br>
+        © 2024 Todos os direitos reservados
+      </p>
+
+      <ul class="mt-10 flex justify-center gap-6 md:gap-8">
+        <li>
+          <a href="https://www.facebook.com/aMostraEstatistica/?locale=pt" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/amostraestatistica/" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://www.youtube.com/channel/UCargFh7dj6ZtDcCNlw30F-w" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 256 256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/company/amostraestatistica/" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Linkedin</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@amostra.usp" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Tiktok</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    const days = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira'];
+    // Atualizei a data pra um cronograma dinamico. 
+    // ideia - cronograma dinamico que muda de acordo com a data atual.
+    // enquanto a amostra não começa ela mostra algo, durante mostra o dia atual, e depois mostra outra coisa.
+
+    let currentIndex = 0;
+    const date = new Date();
+    let dia_atual = date.getDay() - 1
+    if (dia_atual >= 5|| dia_atual == -1) dia_atual = 0
+
+    currentIndex = dia_atual
+    document.getElementById('next').addEventListener('click', () => {
+      if (currentIndex < days.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    function updateCarousel() {
+      const carousel = document.getElementById('carousel').firstElementChild;
+      const dayTitle = document.getElementById('day-title');
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      dayTitle.textContent = days[currentIndex];
+    }
+    updateCarousel()
+  </script>
+</body>
+
+</html>

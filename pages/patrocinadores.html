@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aMostra de Estatística</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="../script.js" defer></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        // Configurações do Owl Carousel, se necessário
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="bg-red-700 border-gray-200">
+    <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/~amostra/index.html"><span class="font-semibold text-xl tracking-tight">aMostra de
+            Estatística</span></a>
+      </div>
+      <button onclick="toggleMenu()" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="menu">
+        <ul
+          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
+          <li>
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Home</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/amostra.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/comissao.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/patrocinadores.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <h1 class="text-3xl font-semibold my-4">PATROCINADORES</h1>
+    <p> Os patrocinadores da aMostra têm um papel essencial na viabilização do evento. Sua contribuição permite a
+      realização de uma programação diversificada e de alta qualidade. Além do suporte financeiro, muitos deles oferecem
+      conhecimento e experiência, enriquecendo a interação entre a academia e o mercado profissional. Essa colaboração
+      fortalece a conexão entre os estudantes e as oportunidades no campo da estatística.</p>
+
+    <div class="container mx-auto py-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Empresa 6: IME -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/ime.png" alt="IME" class="object-contain">
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/imejr.png" alt="IME" class="object-contain">
+        </div>
+        <!-- Empresa 5: HDI Seguros -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/hdiseguros.png" alt="HDI Seguros" class="object-contain">
+        </div>
+        <!-- Empresa 2: Serara Experian -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center">
+          <img src="../logos/serasa.png" alt="Serasa Experian" class="object-contain">
+        </div>
+        <!-- Empresa 3: Dunnhumby -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/dunnhumby.png" alt="Dunnhumby" class="object-contain">
+        </div>
+        <!-- Empresa 8: Insper -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/insper.png" alt="Insper" class="object-contain">
+        </div>
+        <!-- Empresa 9: Management Solutions -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/managementsolutions.jpg" alt="Management Solutions" class="object-contain">
+        </div>
+        <!-- Empresa 10: Market Data -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/marketdata.png" alt="Market Data" class="object-contain">
+        </div>        
+        <!-- Empresa 11: Porto Seguro -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+          <img src="../logos/portoseguro.png" alt="Porto Seguro" class="object-contain">
+        </div>
+        <!-- Empresa 2: Diese -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
+          <img src="../logos/diesse.png" alt="Diesse" class="object-contain">
+        </div>
+        <!-- Empresa 2: Conre 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
+          <img src="../logos/conre3.jpg" alt="Conre 3" class="object-contain">
+        </div>
+        <!-- Empresa 2: Associação Brasileira de Estatística -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
+          <img src="../logos/abe.png" alt="Associação Brasileira de Estatística" class="object-contain">
+        </div>
+        
+      </div>
+    </div>
+    <div class="pb-10">
+      <h1 class="text-3xl font-semibold my-2">COLABORADORES</h1>
+      <p>Os colaboradores da aMostra desempenham um papel fundamental ao proporcionar uma experiência enriquecedora para todos os participantes. Com suas contribuições, eles compartilham conhecimentos e práticas do mercado profissional, oferecendo minicursos e atividades que complementam a formação acadêmica dos estudantes. Essa parceria fomenta a troca de experiências e amplia o horizonte de possibilidades para aqueles que desejam seguir carreira na área da estatística.</p>
+      
+      <div class="container mx-auto py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Empresa 4: Rladies Goiania -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+            <img src="../logos/rladiesgoiania.jpg" alt="R-ladies Goiania" class="object-contain">
+          </div>
+          <!-- Empresa 12: R-Ladies -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+            <img src="../logos/rladies.jpg" alt="R-Ladies" class="object-contain">
+          </div>
+          
+          <!-- Empresa 1: Cursor -->
+          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center">
+            <img src="../logos/cursor.png" alt="Cursor" class="object-contain">
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+
+<!-- Empresa 7: IME Jr
+<div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
+  <img src="../logos/imejr.png" alt="IME Jr" class="object-contain">
+</div> -->
+</html>
