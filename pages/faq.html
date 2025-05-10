@@ -16,6 +16,14 @@
         all: revert;
         font-family: inherit;
       }
+
+      .accordion-content {
+        transition: 
+        height 0.3s ease-out,
+        opacity 0.2s ease,
+        padding 0.2s ease;
+        will-change: height, opacity;
+}
     </style>
   </head>
 
@@ -105,7 +113,7 @@
             >
               Como faço para me inscrever nas atividades?
             </button>
-            <div id="item1" class="accordion-content px-4 py-4 hidden">
+            <div id="item1" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 1.
             </div>
           </div>
@@ -118,7 +126,7 @@
               Preciso me inscrever separadamente para cada minicurso ou
               palestra?
             </button>
-            <div id="item2" class="accordion-content px-4 py-4 hidden">
+            <div id="item2" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 2.
             </div>
           </div>
@@ -130,7 +138,7 @@
             >
               As vagas são limitadas?
             </button>
-            <div id="item3" class="accordion-content px-4 py-4 hidden">
+            <div id="item3" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 3.
             </div>
           </div>
@@ -142,7 +150,7 @@
             >
               Posso me inscrever no dia do evento?
             </button>
-            <div id="item4" class="accordion-content px-4 py-4 hidden">
+            <div id="item4" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 4.
             </div>
           </div>
@@ -154,7 +162,7 @@
             >
               A inscrição é gratuita?
             </button>
-            <div id="item5" class="accordion-content px-4 py-4 hidden">
+            <div id="item5" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 5.
             </div>
           </div>
@@ -171,7 +179,7 @@
             >
               O evento oferece certificado de participação?
             </button>
-            <div id="item6" class="accordion-content px-4 py-4 hidden">
+            <div id="item6" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 6.
             </div>
           </div>
@@ -184,7 +192,7 @@
               Preciso participar de todas as atividades para receber o
               certificado?
             </button>
-            <div id="item7" class="accordion-content px-4 py-4 hidden">
+            <div id="item7" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 7.
             </div>
           </div>
@@ -196,7 +204,7 @@
             >
               O certificado é válido como atividade complementar?
             </button>
-            <div id="item8" class="accordion-content px-4 py-4 hidden">
+            <div id="item8" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 8.
             </div>
           </div>
@@ -213,7 +221,7 @@
             >
               Onde vai acontecer o evento?
             </button>
-            <div id="item9" class="accordion-content px-4 py-4 hidden">
+            <div id="item9" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 9.
             </div>
           </div>
@@ -225,7 +233,7 @@
             >
               O evento será presencial, online ou híbrido?
             </button>
-            <div id="item10" class="accordion-content px-4 py-4 hidden">
+            <div id="item10" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 10.
             </div>
           </div>
@@ -237,7 +245,7 @@
             >
               Vai ter transmissão online ou gravação das palestras?
             </button>
-            <div id="item11" class="accordion-content px-4 py-4 hidden">
+            <div id="item11" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 11.
             </div>
           </div>
@@ -254,7 +262,7 @@
             >
               Preciso levar algum material?
             </button>
-            <div id="item12" class="accordion-content px-4 py-4 hidden">
+            <div id="item12" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 12.
             </div>
           </div>
@@ -266,7 +274,7 @@
             >
               As atividades têm pré-requisitos?
             </button>
-            <div id="item13" class="accordion-content px-4 py-4 hidden">
+            <div id="item13" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 13.
             </div>
           </div>
@@ -283,7 +291,7 @@
             >
               Vai ter coffee break ou intervalo para almoço?
             </button>
-            <div id="item14" class="accordion-content px-4 py-4 hidden">
+            <div id="item14" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 14.
             </div>
           </div>
@@ -295,7 +303,7 @@
             >
               Tem lugar para comer por perto?
             </button>
-            <div id="item15" class="accordion-content px-4 py-4 hidden">
+            <div id="item15" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 15.
             </div>
           </div>
@@ -307,7 +315,7 @@
             >
               Posso levar lanche?
             </button>
-            <div id="item16" class="accordion-content px-4 py-4 hidden">
+            <div id="item16" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
               Conteúdo do item 16.
             </div>
           </div>
@@ -324,7 +332,7 @@
               >
                 Posso levar acompanhante?
               </button>
-              <div id="item17" class="accordion-content px-4 py-4 hidden">
+              <div id="item17" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
                 Conteúdo do item 17.
               </div>
             </div>
@@ -336,7 +344,7 @@
               >
                 Quem organiza o evento?
               </button>
-              <div id="item18" class="accordion-content px-4 py-4 hidden">
+              <div id="item18" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
                 Conteúdo do item 18.
               </div>
             </div>
@@ -348,7 +356,7 @@
               >
                 Com quem eu falo se tiver dúvidas?
               </button>
-              <div id="item19" class="accordion-content px-4 py-4 hidden">
+              <div id="item19" class="accordion-content px-4 h-0 opacity-0 overflow-hidden transition-all duration-300">
                 Conteúdo do item 19.
               </div>
             </div>
@@ -579,35 +587,30 @@
     <script>
       function toggleAccordion(id) {
         const content = document.getElementById(id);
-        const isOpen = !content.classList.contains("hidden");
+        const isClosed = content.classList.contains("opacity-0");
 
-        // Fecha todos os conteúdos
-        document
-          .querySelectorAll(".accordion-content")
-          .forEach((c) => c.classList.add("hidden"));
+        // Fecha todos os itens
+        document.querySelectorAll(".accordion-content").forEach((item) => {
+            item.classList.add("h-0", "opacity-0");
+            item.classList.remove("h-auto", "opacity-100", "py-4");
+        });
 
-        // Resetar todos os botões
-        document
-          .querySelectorAll('button[onclick^="toggleAccordion"]')
-          .forEach((b) => {
-            b.classList.remove("bg-red-700", "text-white", "hover:bg-red-800");
-            b.classList.add("bg-gray-100", "hover:bg-gray-200");
-          });
+        // Reseta todos os botões
+        document.querySelectorAll('button[onclick^="toggleAccordion"]').forEach((button) => {
+            button.classList.remove("bg-red-700", "text-white", "hover:bg-red-800");
+            button.classList.add("bg-gray-100", "hover:bg-gray-200");
+        });
 
-        if (!isOpen) {
-          content.classList.remove("hidden");
-
-          // Ativar o botão correspondente
-          document
-            .querySelectorAll('button[onclick^="toggleAccordion"]')
-            .forEach((b) => {
-              if (b.getAttribute("onclick").includes(id)) {
-                b.classList.remove("bg-gray-100", "hover:bg-gray-200");
-                b.classList.add("bg-red-700", "text-white", "hover:bg-red-800"); // mantem tom escuro no hover
-              }
-            });
+        if (isClosed) {
+            content.classList.remove("h-0", "opacity-0");
+            content.classList.add("h-auto", "opacity-100", "py-4");
+            
+            // Estiliza o botão ativo
+            const activeButton = document.querySelector(`button[onclick="toggleAccordion('${id}')"]`);
+            activeButton.classList.remove("bg-gray-100", "hover:bg-gray-200");
+            activeButton.classList.add("bg-red-700", "text-white", "hover:bg-red-800");
         }
-      }
+    }
     </script>
     <script src="script.js"></script>
   </body>
