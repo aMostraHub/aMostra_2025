@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aMostra de Estatística</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css">
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <nav class="bg-red-700 border-gray-200">
+    <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="/~amostra/index.html"><span class="font-semibold text-xl tracking-tight">aMostra de
+            Estatística</span></a>
+      </div>
+      <button onclick="toggleMenu()" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="menu">
+        <ul
+          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
+          <li>
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/amostra.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/comissao.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
+          </li>
+          <li>
+            <a href="/~amostra/pages/patrocinadores.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <h1 class="text-3xl font-semibold mb-4">COMISSÃO</h1>
+      <p> A comissão organizadora da aMostra é composta por um grupo dedicado de estudantes do curso de Estatística do
+        Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP). Esses estudantes, comprometidos
+        com o sucesso do evento, são responsáveis por planejar, coordenar e executar todas as atividades relacionadas à
+        aMostra. Suas atribuições incluem a seleção de palestrantes, a gestão logística e administrativa, a promoção do
+        evento junto à comunidade acadêmica e profissional, e a busca por parcerias e apoios institucionais. Trabalhando
+        em equipe, a comissão garante que a aMostra seja um evento enriquecedor e bem-sucedido, oferecendo uma
+        experiência valiosa tanto para os participantes quanto para os próprios organizadores.</p>
+    </div>
+
+  <footer class="bg-gray-100">
+    <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="flex justify-center">
+        <img src="./../styles/Logo.png" alt="Logo da Amostra" class="w-10 h-auto max-w-32 mb-10 md:mb-2">
+        <h6 class="p-2">Amostra de Estatística</h6>
+      </div>
+
+      <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+        aMostra de Estatística 2025 <br>
+        © 2025 Todos os direitos reservados
+      </p>
+
+      <ul class="mt-10 flex justify-center gap-6 md:gap-8">
+        <li>
+          <a href="https://www.facebook.com/aMostraEstatistica/?locale=pt" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/amostraestatistica/" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://www.youtube.com/channel/UCargFh7dj6ZtDcCNlw30F-w" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 256 256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/company/amostraestatistica/" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Linkedin</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@amostra.usp" rel="noreferrer" target="_blank"
+            class="text-gray-700 transition hover:text-gray-700/75">
+            <span class="sr-only">Tiktok</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-6 w-6" viewBox="0,0,256,256">
+              <g fill="#666e7b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
