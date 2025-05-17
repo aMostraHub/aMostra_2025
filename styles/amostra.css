@@ -1,0 +1,54 @@
+.fundoVermelho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ba0505;
+    padding: 5rem 10rem;
+    align-items: center; 
+}
+
+.fundoVermelhoTextos h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+    color: #fff;
+}
+
+.fundoVermelhoTextos p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'League Spartan', sans-serif;
+    color: #fff;
+}
+
+.fundoVermelhoTextos {
+    text-align: center;
+}
+
+.logoContainer {
+    padding: 5rem;
+}
+
+.logotipo {
+    width: 100%;
+    height: auto;
+}
+
+.containerOQueEhAmostra {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.OQueEhAmostraTextos p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.carouselContainer {
+    padding: 5rem 15rem;
+}
+
+.fotoAmostra {
+    border-radius: 1rem;
+    width: 100%;
+}

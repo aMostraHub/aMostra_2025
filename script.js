@@ -35,3 +35,30 @@ const countdownFunction = setInterval(() => {
     }
 }, 1000);
 
+// Carousel splide.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.splide', {
+      type    : 'loop',      
+      focus: 'center',       
+      perPage : 1,
+      perMove : 1,
+      rewind  : true,
+      autoplay: true,         
+      interval: 8000,         // tempo entre slides (em ms), coloquei 8 segundos. 
+      pauseOnHover: true,     // pausa se passar o mouse em cima
+      padding: '5rem',
+      gap: '1rem'
+    });
+  
+    var bar = document.querySelector('.my-slider-progress-bar');
+  
+    splide.on('mounted move', function () {
+      var end  = splide.Components.Controller.getEnd() + 1;
+      var rate = Math.min((splide.index + 1) / end, 1);
+      bar.style.width = String(100 * rate) + '%';
+    });
+  
+    splide.mount();
+  });
+  

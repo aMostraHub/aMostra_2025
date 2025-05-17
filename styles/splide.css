@@ -1,0 +1,22 @@
+.my-slider-progress {
+    background: #ccc;
+    margin-top: 0.5rem;
+}
+  
+.my-slider-progress-bar {
+    background: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+    height: 4px;
+    transition: width 400ms ease;
+    width: 0;
+ }
+
+.splide__slide img {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.splide {
+    margin-top: 1rem;
+}
+
