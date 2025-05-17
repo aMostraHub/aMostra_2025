@@ -60,6 +60,7 @@
     </div>
   </nav>
 
+  
   <div class="flex-grow flex items-center p-4  justify-center gap-32 h-screen bg-red-700 pb_16">
     <div class="max-w-3xl text-center">
       <h1 class="text-white text-3xl font-extrabold text-transparent sm:text-5xl">
@@ -109,6 +110,11 @@
         </g>
       </g>
     </svg></a>
+  
+
+
+
+
 
   <section id="sec-2">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -129,6 +135,25 @@
     </div>
   </section>
 
+    <section class="bg-white-200 py-12">
+  <div id="counterContainer" class="container mx-auto px-4 flex flex-col md:flex-row justify-center gap-8 text-white text-center">
+    
+    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="300">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Presenças no ano<br>passado</p>
+    </div>
+
+    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="20">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Patrocinadores</p>
+    </div>
+
+    <div style = "text-align: center" class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="10">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Palestras</p>
+    </div>
+  </div>
+</section>
   <div class="mx-auto bg-red-600 text-white p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
     <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
     <div id="countdown" class="text-2xl sm:text-3xl">
@@ -354,6 +379,48 @@
     }
     updateCarousel()
   </script>
+
+<script>
+  const container = document.getElementById("counterContainer");
+    const counters = document.querySelectorAll(".count");
+    let activated = false;
+
+    window.addEventListener("scroll", () => {
+      if (
+        window.pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
+        !activated
+      ) {
+        counters.forEach(counter => {
+          counter.innerText = 0;
+          let count = 0;
+          const target = parseInt(counter.dataset.count);
+
+          function updateCount() {
+            if (count < target) {
+              count++;
+              counter.innerText = count;
+              setTimeout(updateCount, 50);
+            } else {
+              counter.innerText = target;
+            }
+          }
+
+          updateCount();
+        });
+
+        activated = true;
+      } else if (
+        (window.pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
+        window.pageYOffset === 0) &&
+        activated
+      ) {
+        counters.forEach(counter => {
+          counter.innerText = 0;
+        });
+        activated = false;
+      }
+    });
+</script>
 </body>
 
 </html>

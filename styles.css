@@ -77,3 +77,16 @@ p {
   object-fit: fill; /* Ou ajuste para 'cover' ou 'fill' conforme necessário */
 }
 
+.count {
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .count {
+    font-size: 2.5rem;
+  }
+}
+
+
