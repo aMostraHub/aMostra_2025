@@ -154,7 +154,6 @@
     </div>
   </div>
 </section>
-  <div class="mx-auto bg-red-600 text-white p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
   <div class="mx-auto bg-red-600 text-white mb-10 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
     <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
     <div id="countdown" class="text-2xl sm:text-3xl">
@@ -163,8 +162,8 @@
         <span id="minutes" class="px-1 sm:px-2">00</span>m:
         <span id="seconds" class="px-1 sm:px-2">00</span>s
     </div>
-</div>
-  
+  </div>
+
   <div class="container mx-auto py-8 px-4 md:px-44">
     <div class="bg-white p-6 rounded-lg shadow-lg border">
       <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação da Semana</h1>
@@ -383,44 +382,40 @@
 
 <script>
   const container = document.getElementById("counterContainer");
-    const counters = document.querySelectorAll(".count");
-    let activated = false;
+const counters = document.querySelectorAll(".count");
+let activated = false;
 
-    window.addEventListener("scroll", () => {
-      if (
-        window.pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
-        !activated
-      ) {
-        counters.forEach(counter => {
-          counter.innerText = 0;
-          let count = 0;
-          const target = parseInt(counter.dataset.count);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !activated) {
+      counters.forEach(counter => {
+        counter.innerText = 0;
+        let count = 0;
+        const target = parseInt(counter.dataset.count);
 
-          function updateCount() {
-            if (count < target) {
-              count++;
-              counter.innerText = count;
-              setTimeout(updateCount, 50);
-            } else {
-              counter.innerText = target;
-            }
+        function updateCount() {
+          if (count < target) {
+            count++;
+            counter.innerText = count;
+            setTimeout(updateCount, 20); // pode ajustar a velocidade aqui
+          } else {
+            counter.innerText = target;
           }
+        }
 
-          updateCount();
-        });
+        updateCount();
+      });
 
-        activated = true;
-      } else if (
-        (window.pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
-        window.pageYOffset === 0) &&
-        activated
-      ) {
-        counters.forEach(counter => {
-          counter.innerText = 0;
-        });
-        activated = false;
-      }
-    });
+      activated = true;
+      observer.unobserve(container); // para garantir que não dispara de novo
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+observer.observe(container);
+
 </script>
 </body>
 
