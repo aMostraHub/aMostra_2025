@@ -8,19 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="../script.js" defer></script>
-  <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
-        // Configurações do Owl Carousel, se necessário
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -43,9 +31,7 @@
         <ul
           class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
           <li>
-            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio
-              
-            </a>
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio</a>
           </li>
           <li>
             <a href="/~amostra/pages/amostra.html"
@@ -64,88 +50,110 @@
     </div>
   </nav>
   <div class="content h-full">
-    <h1 class="text-3xl font-semibold my-4">PATROCINADORES</h1>
-    <p> Os patrocinadores da aMostra têm um papel essencial na viabilização do evento. Sua contribuição permite a
-      realização de uma programação diversificada e de alta qualidade. Além do suporte financeiro, muitos deles oferecem
-      conhecimento e experiência, enriquecendo a interação entre a academia e o mercado profissional. Essa colaboração
-      fortalece a conexão entre os estudantes e as oportunidades no campo da estatística.</p>
+    <h1 class="text-3xl font-semibold mb-4">O que é a aMostra de Estatística?</h1>
+    <p> A aMostra é um evento anual organizado pelos estudantes do curso de Estatística do Instituto de Matemática e
+      Estatística da Universidade de São Paulo (IME-USP), com o apoio do professor Victor Fossaluza. O objetivo
+      principal do evento é proporcionar um espaço de discussão e aprendizado sobre temas relevantes ao cotidiano de um
+      profissional de estatística. Para isso, a programação inclui uma série de atividades, como palestras, mesas
+      redondas e minicursos, que abordam diversos aspectos teóricos e práticos da estatística. Além de promover a troca
+      de conhecimentos entre estudantes, docentes e profissionais da área, a aMostra busca estimular o desenvolvimento
+      de habilidades técnicas e a reflexão crítica sobre os desafios e as oportunidades na carreira de estatístico.</p>
 
-    <div class="container mx-auto py-8">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <!-- Empresa 6: IME -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/ime.png" alt="IME" class="object-contain">
+    <div class="relative mt-2 md:m-10 overflow-hidden">
+      <!-- Slide Container -->
+      <div class="flex transition-transform duration-300 ease-in-out max-h-[30rem]" id="slider">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/1.jpg" alt="Slide 1">
         </div>
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/imejr.png" alt="IME" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/2.jpg" alt="Slide 2" class=" md:bottom-0 md:absolute">
         </div>
-        <!-- Empresa 5: HDI Seguros -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/hdiseguros.png" alt="HDI Seguros" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/3.jpg" alt="Slide 3">
         </div>
-        <!-- Empresa 2: Serara Experian -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center">
-          <img src="../logos/serasa.png" alt="Serasa Experian" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/4.jpg" alt="Slide 4">
         </div>
-        <!-- Empresa 3: Dunnhumby -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/dunnhumby.png" alt="Dunnhumby" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/5.jpg" alt="Slide 5">
         </div>
-        <!-- Empresa 8: Insper -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/insper.png" alt="Insper" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/6.jpg" alt="Slide 6">
         </div>
-        <!-- Empresa 9: Management Solutions -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/managementsolutions.jpg" alt="Management Solutions" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/7.jpg" alt="Slide 7">
         </div>
-        <!-- Empresa 10: Market Data -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/marketdata.png" alt="Market Data" class="object-contain">
-        </div>        
-        <!-- Empresa 11: Porto Seguro -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-          <img src="../logos/portoseguro.png" alt="Porto Seguro" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/8.jpg" alt="Slide 8">
         </div>
-        <!-- Empresa 2: Diese -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
-          <img src="../logos/diesse.png" alt="Diesse" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/9.jpg" alt="Slide 9">
         </div>
-        <!-- Empresa 2: Conre 3 -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
-          <img src="../logos/conre3.jpg" alt="Conre 3" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/10.jpg" alt="Slide 10">
         </div>
-        <!-- Empresa 2: Associação Brasileira de Estatística -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-40">
-          <img src="../logos/abe.png" alt="Associação Brasileira de Estatística" class="object-contain">
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/11.jpg" alt="Slide 11">
         </div>
-        
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/12.jpg" alt="Slide 12">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/13.jpg" alt="Slide 13">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/14.jpg" alt="Slide 14">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/15.jpg" alt="Slide 15">
+        </div>
+        <!-- <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/16.jpg" alt="Slide 16">
+        </div> -->
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/17.jpg" alt="Slide 17">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/18.jpg" alt="Slide 18">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/19.jpg" alt="Slide 19">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/20.jpg" alt="Slide 20">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/21.jpg" alt="Slide 21">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/22.jpg" alt="Slide 22">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/23.jpg" alt="Slide 23">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/24.jpg" alt="Slide 24">
+        </div>
+        <!-- <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/25.jpg" alt="Slide 25">
+        </div> -->
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/26.jpg" alt="Slide 26">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/27.jpg" alt="Slide 27">
+        </div>
+        <div class="min-w-full min-h-full  items-center justify-center flex">
+            <img src="../styles/28.jpg" alt="Slide 28">
+        </div>
       </div>
+
+      <!-- Navigation Buttons -->
+      <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        onclick="prevSlide()">‹</button>
+      <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        onclick="nextSlide()">›</button>
     </div>
-    <div class="pb-10">
-      <h1 class="text-3xl font-semibold my-2">COLABORADORES</h1>
-      <p>Os colaboradores da aMostra desempenham um papel fundamental ao proporcionar uma experiência enriquecedora para todos os participantes. Com suas contribuições, eles compartilham conhecimentos e práticas do mercado profissional, oferecendo minicursos e atividades que complementam a formação acadêmica dos estudantes. Essa parceria fomenta a troca de experiências e amplia o horizonte de possibilidades para aqueles que desejam seguir carreira na área da estatística.</p>
-      
-      <div class="container mx-auto py-8">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <!-- Empresa 4: Rladies Goiania -->
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-            <img src="../logos/rladiesgoiania.jpg" alt="R-ladies Goiania" class="object-contain">
-          </div>
-          <!-- Empresa 12: R-Ladies -->
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-            <img src="../logos/rladies.jpg" alt="R-Ladies" class="object-contain">
-          </div>
-          
-          <!-- Empresa 1: Cursor -->
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center">
-            <img src="../logos/cursor.png" alt="Cursor" class="object-contain">
-          </div>
-        </div>
-      </div>
-     
-    </div>
-  
   </div>
   <footer class="bg-gray-100">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
@@ -257,13 +265,28 @@
       </ul>
     </div>
   </footer>
-  
-  
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('#slider > div');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      const offset = -index * 100;
+      document.querySelector('#slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+  </script>
+
   <script src="script.js"></script>
 </body>
 
-<!-- Empresa 7: IME Jr
-<div class="bg-white shadow-md rounded-lg p-6 flex items-center justify-center max-h-60">
-  <img src="../logos/imejr.png" alt="IME Jr" class="object-contain">
-</div> -->
 </html>

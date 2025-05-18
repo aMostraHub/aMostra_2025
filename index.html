@@ -41,7 +41,7 @@
         <ul
           class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
           <li>
-            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Home</a>
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio</a>
           </li>
           <li>
             <a href="/~amostra/pages/amostra.html"
@@ -60,6 +60,7 @@
     </div>
   </nav>
 
+  
   <div class="flex-grow flex items-center p-4  justify-center gap-32 h-screen bg-red-700 pb_16">
     <div class="max-w-3xl text-center">
       <h1 class="text-white text-3xl font-extrabold text-transparent sm:text-5xl">
@@ -109,6 +110,11 @@
         </g>
       </g>
     </svg></a>
+  
+
+
+
+
 
   <section id="sec-2">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -129,6 +135,26 @@
     </div>
   </section>
 
+    <section class="bg-white-200 py-12">
+  <div id="counterContainer" class="container mx-auto px-4 flex flex-col md:flex-row justify-center gap-8 text-white text-center">
+    
+    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="300">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Presenças no ano<br>passado</p>
+    </div>
+
+    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="20">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Patrocinadores</p>
+    </div>
+
+    <div style = "text-align: center" class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
+      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="10">0</span></h1>
+      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Palestras</p>
+    </div>
+  </div>
+</section>
+  <div class="mx-auto bg-red-600 text-white p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
   <div class="mx-auto bg-red-600 text-white mb-10 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
     <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
     <div id="countdown" class="text-2xl sm:text-3xl">
@@ -138,251 +164,13 @@
         <span id="seconds" class="px-1 sm:px-2">00</span>s
     </div>
 </div>
-<!--
-<div class="container mx-auto py-8 px-4 md:px-44">
-  <div class="bg-white p-6 rounded-lg shadow-lg border">
-      <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação dos dias</h1>
-      <div class="flex justify-between mb-4">
-        <button id="prev" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </button>
-        <h2 id="day-title" class="text-xl md:text-2xl font-bold">Segunda-feira</h2>
-        <button id="next" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div id="carousel" class="overflow-hidden relative">
-        <div class="flex transition-transform duration-500">
-          <div class="min-w-full md:p-4">
-            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
-                  <th class="py-2 text-lg ">Atividade</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm">
-                <tr>
-                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
-                  <td class="py-2 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Patrícia Viana: Análise de agrupamento por modelos de mistura 
-                    Bayesianos e distribuições a priori repulsivas
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Jony Arrais: Avaliando o impacto da temperatura na saúde humana
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    HDI Seguros: Aplicação dos Modelos de Risco na Precificação de Seguros
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Insper: <br> 
-                    Parte 1: Paulo Marques: Uma breve introdução à predição conformal <br>
-                    Parte 2: Hedibert Lopes: Estatística e Econometria Bayesiana no Insper
-                  </td>
-                </tr>
-                <tr class="text-white">
-                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
-                  </td>
-                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
-                    <strong>MINICURSO:</strong><br>
-                    Beatriz Milz: Criando mapas no R com o pacote geobr
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-          </div>
-          
-
-
-          <div class="min-w-full md:p-4">
-            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
-                  <th class="py-2 text-lg ">Atividade</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm">
-                <tr>
-                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
-                  <td class="py-2 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Marcus Estanislao: O estatístico na era de I.A.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Doris Fontes: A profissão do estatístico num mercado que tem valorizado o cientista de dados
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    M. Solutions: Principais aspectos da modelagem no âmbito do risco de crédito
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Sessão de Pôsteres
-                  </td>
-                </tr>
-                <tr class="text-white">
-                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
-                  </td>
-                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
-                    <strong>MINICURSO:</strong><br>
-                    R-Ladies São Paulo: Gráficos em R
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-          </div>
-
-          <div class="min-w-full md:p-4">
-            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
-                  <th class="py-2 text-lg ">Atividade</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm">
-                <tr>
-                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
-                  <td class="py-2 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Gladys Ulloa: Estatística: O motor secreto por trás da revolução da ciência de dados
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Natalia Amancio: O papel do estatístico no futuro do trabalho
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    MarketData: Do campus ao campo: resolvendo problemas reais
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Dunnhumby: Ciência de dados e inteligência artificial aplicada ao varejo
-                  </td>
-                </tr>
-                <tr class="text-white">
-                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
-                  </td>
-                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
-                    <strong>MINICURSO:</strong><br>
-                    Curso R: Análise de dados
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-          </div>
-          <div class="min-w-full md:p-4">
-            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
-                  <th class="py-2 text-lg ">Atividade</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm">
-                <tr>
-                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">09:40 às 10:40</td>
-                  <td class="py-2 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Agatha Rodrigues: Estatística e políticas públicas
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00 às 12:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Anderson Ara: Aprendizado de máquina (Machine Learning)
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00 às 15:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Serasa Experian: Datalab: Inovação dentro da Serasa Experian
-                  </td>
-                </tr>
-                <tr>
-                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00 às 16:00</td>
-                  <td class="md:py-6 ps-6">
-                    <strong>PALESTRA</strong><br>
-                    Porto Seguro: Ciência de dados na Porto Seguro
-                  </td>
-                </tr>
-                <tr class="text-white">
-                  <td class="rounded-s-2xl border-red-700 bg-red-700 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:30 às 19:00
-                  </td>
-                  <td class="rounded-e-2xl border-red-700 bg-red-700 py-2 md:py-6 ps-6">
-                    <strong>MINICURSO:</strong><br>
-                    R-Ladies Goiânia: Extensão Quarto
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-          </div>
-          <div class="min-w-full md:p-4">
-            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
-                  <th class="py-2 text-lg ">Atividade</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm">
-                <tr>
-                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">10:00 às 12:00</td>
-                  <td class="py-2 ps-6">
-                    <strong>Mesa Redonda</strong><br>
-                    Fernanda Kelly, Gabriela Sá, Mayumi Sato e Gabriela Uhrigshardt: <br>
-                    Mulheres na tecnologia
-                  </td>
-              </tbody>
-            </table>
-            
-          </div>
-          
-        </div>
-        
-      </div>
+  
+  <div class="container mx-auto py-8 px-4 md:px-44">
+    <div class="bg-white p-6 rounded-lg shadow-lg border">
+      <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação da Semana</h1>
+      <p style="text-align: center"> Disponível em breve.</p>
     </div>
   </div> 
--->
 
   <!-- Atualizar depois com links atualizados assim que disponível -->
 
@@ -592,6 +380,48 @@
     }
     updateCarousel()
   </script>
+
+<script>
+  const container = document.getElementById("counterContainer");
+    const counters = document.querySelectorAll(".count");
+    let activated = false;
+
+    window.addEventListener("scroll", () => {
+      if (
+        window.pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
+        !activated
+      ) {
+        counters.forEach(counter => {
+          counter.innerText = 0;
+          let count = 0;
+          const target = parseInt(counter.dataset.count);
+
+          function updateCount() {
+            if (count < target) {
+              count++;
+              counter.innerText = count;
+              setTimeout(updateCount, 50);
+            } else {
+              counter.innerText = target;
+            }
+          }
+
+          updateCount();
+        });
+
+        activated = true;
+      } else if (
+        (window.pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
+        window.pageYOffset === 0) &&
+        activated
+      ) {
+        counters.forEach(counter => {
+          counter.innerText = 0;
+        });
+        activated = false;
+      }
+    });
+</script>
 </body>
 
 </html>
