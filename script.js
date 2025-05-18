@@ -47,10 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
       autoplay: true,         
       interval: 8000,         // tempo entre slides (em ms), coloquei 8 segundos. 
       pauseOnHover: true,     // pausa se passar o mouse em cima
-      padding: '5rem',
-      gap: '1rem'
+      breakpoints:{
+        640:{
+            padding : "0rem"
+        }
+    },
+    padding: '5rem',
+    gap: '1rem'
     });
-  
+    
     var bar = document.querySelector('.my-slider-progress-bar');
   
     splide.on('mounted move', function () {

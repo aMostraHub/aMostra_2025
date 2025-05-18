@@ -1,20 +1,15 @@
 .fundoVermelho {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background: #ba0505;
-    padding: 5rem 10rem;
     align-items: center; 
 }
 
 .fundoVermelhoTextos h1 {
-    font-size: 5rem;
     font-weight: 700;
     font-family: 'League Spartan', sans-serif;
     color: #fff;
 }
 
 .fundoVermelhoTextos p {
-    font-size: 1.5rem;
     font-weight: 300;
     font-family: 'League Spartan', sans-serif;
     color: #fff;
@@ -24,9 +19,7 @@
     text-align: center;
 }
 
-.logoContainer {
-    padding: 5rem;
-}
+
 
 .logotipo {
     width: 100%;
@@ -52,3 +45,4 @@
     border-radius: 1rem;
     width: 100%;
 }
+

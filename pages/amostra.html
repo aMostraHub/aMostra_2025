@@ -55,66 +55,74 @@
       </div>
     </div>
   </nav>
-
-  <div class="fundoVermelho">
-    <div class="fundoVermelhoTextos">
-      <h1>aMostra XVIII</h1>
-      <p>Dê um pulinho na nossa aMostra de Estatística, um evento espetacular que vai rolar de 25/08 a 29/08!</p>
+  
+  <div class="fundoVermelho pt-28 pb-20 px-5 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
+    <div class="fundoVermelhoTextos col-span-2">
+      <h1 class="text-white text-4xl font-extrabold text-transparent sm:text-6xl">aMostra XVIII</h1>
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">Dê um pulinho na nossa aMostra de Estatística, um evento espetacular que vai rolar de 25/08 a 29/08!</p>
     </div>
-    <div class="logoContainer">
-      <img src="./../styles/logo_branco_isolado.png" alt="Logo da aMostra" class="logotipoAmostra">
-    </div>
-   </div>
-
-
-  <div class="containerOQueEhAmostra">
-    <div class="OQueEhAmostraTextos">
-      <h1 class="text-3xl font-semibold mb-4">O que é a aMostra de Estatística?</h1>
-      <p> A aMostra é um evento anual organizado pelos estudantes do curso de Estatística do Instituto de Matemática e
-        Estatística da Universidade de São Paulo (IME-USP), com o apoio do professor Victor Fossaluza. O objetivo
-        principal do evento é proporcionar um espaço de discussão e aprendizado sobre temas relevantes ao cotidiano de um
-        profissional de estatística. Para isso, a programação inclui uma série de atividades, como palestras, mesas
-        redondas e minicursos, que abordam diversos aspectos teóricos e práticos da estatística. Além de promover a troca
-        de conhecimentos entre estudantes, docentes e profissionais da área, a aMostra busca estimular o desenvolvimento
-        de habilidades técnicas e a reflexão crítica sobre os desafios e as oportunidades na carreira de estatístico.</p>
-    </div>
-    <div>
-      <img src="./../styles/fotoAmostra.png" alt="Foto tirada durante uma de nossas palestras" class="fotoAmostra">
+    <div class="p-5 hidden lg:block">
+      <img src="./../styles/logo_branco_isolado.png" alt="Logo da aMostra" class="size-3/4">
     </div>
   </div>
 
-  <div class="carouselContainer">
-    <div class="splide" aria-label="Galeria de Slides">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide"><img src="../styles/1.jpg" alt="Slide 1"></li>
-          <li class="splide__slide"><img src="../styles/2.jpg" alt="Slide 2"></li>
-          <li class="splide__slide"><img src="../styles/3.jpg" alt="Slide 3"></li>
-          <li class="splide__slide"><img src="../styles/4.jpg" alt="Slide 4"></li>
-          <li class="splide__slide"><img src="../styles/5.jpg" alt="Slide 5"></li>
-          <li class="splide__slide"><img src="../styles/6.jpg" alt="Slide 6"></li>
-          <li class="splide__slide"><img src="../styles/7.jpg" alt="Slide 7"></li>
-          <li class="splide__slide"><img src="../styles/8.jpg" alt="Slide 8"></li>
-          <li class="splide__slide"><img src="../styles/9.jpg" alt="Slide 9"></li>
-          <li class="splide__slide"><img src="../styles/10.jpg" alt="Slide 10"></li>
-          <li class="splide__slide"><img src="../styles/11.jpg" alt="Slide 11"></li>
-          <li class="splide__slide"><img src="../styles/12.jpg" alt="Slide 12"></li>
-          <li class="splide__slide"><img src="../styles/13.jpg" alt="Slide 13"></li>
-          <li class="splide__slide"><img src="../styles/14.jpg" alt="Slide 14"></li>
-          <li class="splide__slide"><img src="../styles/15.jpg" alt="Slide 15"></li>
-          <li class="splide__slide"><img src="../styles/16.jpg" alt="Slide 16"></li>
-          <li class="splide__slide"><img src="../styles/17.jpg" alt="Slide 17"></li>
-          <li class="splide__slide"><img src="../styles/18.jpg" alt="Slide 18"></li>
-          <li class="splide__slide"><img src="../styles/19.jpg" alt="Slide 19"></li>
-          <li class="splide__slide"><img src="../styles/20.jpg" alt="Slide 20"></li>
-          <li class="splide__slide"><img src="../styles/21.jpg" alt="Slide 21"></li>
-          <li class="splide__slide"><img src="../styles/22.jpg" alt="Slide 22"></li>
-          <li class="splide__slide"><img src="../styles/23.jpg" alt="Slide 23"></li>
-          <li class="splide__slide"><img src="../styles/24.jpg" alt="Slide 24"></li>
-          <li class="splide__slide"><img src="../styles/25.jpg" alt="Slide 25"></li>
-          <li class="splide__slide"><img src="../styles/26.jpg" alt="Slide 26"></li>
-          <li class="splide__slide"><img src="../styles/27.jpg" alt="Slide 27"></li>
-          <li class="splide__slide"><img src="../styles/28.jpg" alt="Slide 28"></li>
+
+  <section id="sec-2">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+          <img alt="" src="../styles/foto_palestra.jpg" class="absolute inset-0 h-full w-full object-cover" />
+        </div>
+
+        <div class="lg:py-24">
+          <h2 class="text-2xl md:text-3xl font-bold sm:text-4xl">O que é aMostra de Estatística?</h2>
+
+          <p class="mt-4 text-gray-600">A aMostra é um evento anual organizado pelos estudantes de Estatística do IME-USP, com apoio do professor Victor Fossaluza. A ideia é criar um espaço descontraído e ao mesmo tempo profundo para discutir o que realmente importa no dia a dia de quem trabalha com estatística.
+
+A programação mistura palestras, mesas-redondas e minicursos — tudo voltado para ampliar o olhar, trocar experiências e pensar, com mais senso crítico, nos caminhos da profissão.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">
+  Edições Anteriores
+</h2>
+  
+
+  <div class="w-full px-4 lg:w-3/5 mx-auto mb-10">
+    <div class="splide splide__list h-64 sm:h-80 md:h-[32rem]" aria-label="Galeria de Slides">
+      <div class="splide__track rounded-2xl overflow-hidden"> 
+        <ul class="splide__list h-64 md:h-full">
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/1.jpg" alt="Slide 1"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/2.jpg" alt="Slide 2"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/3.jpg" alt="Slide 3"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/4.jpg" alt="Slide 4"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/5.jpg" alt="Slide 5"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/6.jpg" alt="Slide 6"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/7.jpg" alt="Slide 7"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/8.jpg" alt="Slide 8"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/9.jpg" alt="Slide 9"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/10.jpg" alt="Slide 10"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/11.jpg" alt="Slide 11"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/12.jpg" alt="Slide 12"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/13.jpg" alt="Slide 13"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/14.jpg" alt="Slide 14"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/15.jpg" alt="Slide 15"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/16.jpg" alt="Slide 16"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/17.jpg" alt="Slide 17"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/18.jpg" alt="Slide 18"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/19.jpg" alt="Slide 19"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/20.jpg" alt="Slide 20"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/21.jpg" alt="Slide 21"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/22.jpg" alt="Slide 22"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/23.jpg" alt="Slide 23"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/24.jpg" alt="Slide 24"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/25.jpg" alt="Slide 25"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/26.jpg" alt="Slide 26"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/27.jpg" alt="Slide 27"></li>
+          <li class="splide__slide"><img class="w-full h-full object-cover" src="../styles/28.jpg" alt="Slide 28"></li>
         </ul>
       </div>
     </div>
