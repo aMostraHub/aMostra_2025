@@ -22,73 +22,151 @@
     </div>
   </div>
 
-  <nav class="bg-red-700 border-gray-200">
-    <div class="fixed w-full bg-red-700 z-40 flex flex-wrap items-center justify-between mx-auto p-4 shadow">
+  <nav class="bg-gradient-to-r from-[#6B1214] to-[#EC1400] border-gray-200">
+    <div
+      class="fixed w-full bg-gradient-to-r from-[#6B1214] to-[#EC1400] bg-opacity-90 backdrop-blur-sm z-40 flex flex-wrap items-center justify-between mx-auto p-4"
+    >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href="/~amostra/index.html"><span class="font-semibold text-xl tracking-tight">aMostra de
-            Estatística</span></a>
+        <a href="/~amostra/index.html"
+          ><span class="font-semibold text-xl tracking-tight"
+            >aMostra XVIII</span
+          ></a
+        >
       </div>
-      <button onclick="toggleMenu()" type="button"
+      <button
+        onclick="toggleMenu()"
+        type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default" aria-expanded="false">
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
         <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
         </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="menu">
         <ul
-          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-red-700 text-white">
+          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-white bg-transparent border-0"
+        >
           <li>
-            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio</a>
+            <a
+              href="/~amostra/index.html"
+              class="block py-2 px-3 md:p-0 hover:text-slate-400"
+              >Ínicio</a
+            >
           </li>
           <li>
-            <a href="/~amostra/pages/amostra.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
+            <a
+              href="/~amostra/pages/amostra.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
+              >aMostra</a
+            >
           </li>
           <li>
-            <a href="/~amostra/pages/comissao.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
+            <a
+              href="/~amostra/pages/comissao.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
+              >Comissão</a
+            >
           </li>
           <li>
-            <a href="/~amostra/pages/patrocinadores.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
+            <a
+              href="/~amostra/pages/patrocinadores.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
+              >Parceiros</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  
-  <div class="flex-grow flex items-center p-4  justify-center gap-32 h-screen bg-red-700 pb_16">
-    <div class="max-w-3xl text-center">
-      <h1 class="text-white text-3xl font-extrabold text-transparent sm:text-5xl">
-        aMostra de Estatística 2025
-      </h1>
-      <h2 class="text-xl font-bold text-white mt-2 sm:text-2xl">
-        XVII Edição
-      </h2>
-
-      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
-        A aMostra é um evento gratuito imperdível que acontece anualmente, organizada pelos alunos do curso de Estatística do
-        IME-USP! Esse ano ela ocorrerá nos dias 25/08 a 29/08.
-      </p>
-
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a class="block w-full rounded border border-red-600 bg-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="#sec-3">
-          Cronograma
-        </a>
-
-        <a class="block w-full rounded border border-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-red-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-          href="/~amostra/pages/amostra.html">
-          Saiba mais
-        </a>
-      </div>
-    </div>
-    <img src="styles/logo_branco_isolado.png" alt="Logo da Amostra" class="w-1/6 h-auto mb-10 md:mb-2 hidden lg:block">
+  <div
+  class="flex-grow flex items-center p-4 justify-center gap-32 h-screen bg-gradient-to-r from-[#6B1214] to-[#EC1400] pb-16 relative overflow-hidden"
+>
+  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+    <img
+      src="styles/bg-vector.svg"
+      class="w-full h-auto opacity-40 rotate-[2deg] -translate-y-10 scale-125"
+      alt="Fundo decorativo"
+    />
   </div>
+
+  <div class="relative z-10 max-w-3xl text-center">
+    <h1
+      class="text-white text-3xl font-extrabold text-transparent sm:text-5xl"
+    >
+      aMostra XVIII
+    </h1>
+
+    <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
+      Dê um pulinho na nossa aMostra de Estatística, um evento espetacular
+      que vai rolar de 25/08 a 29/08!
+    </p>
+  </div>
+  <img
+    src="styles/logo_branco_isolado.png"
+    alt="Logo da Amostra"
+    class="w-1/6 h-auto mb-10 md:mb-2 hidden lg:block"
+  />
+</div>
+
+<a href="#sec-2"
+><svg
+  class="hidden lg:block h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce"
+  viewBox="0 -4.5 20 20"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  fill="#000000"
+>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g
+    id="SVGRepo_tracerCarrier"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  ></g>
+  <g id="SVGRepo_iconCarrier">
+    <title>arrow_down [#338]</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <g
+        id="Dribbble-Light-Preview"
+        transform="translate(-220.000000, -6684.000000)"
+        fill="#ffffff"
+      >
+        <g id="icons" transform="translate(56.000000, 160.000000)">
+          <path
+            d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
+            id="arrow_down-[#338]"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </g></svg
+></a>
+
+
   <a href="#sec-2"><svg
       class="hidden lg:block h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce"
       viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
