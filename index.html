@@ -17,77 +17,44 @@
     <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full text-center">
       <h2 class="text-2xl font-bold mb-4">Participe da aMostra!</h2>
       <p class="mb-6">Inscreva-se agora e não perca nenhum detalhe do evento.</p>
-      <button id="subscribe-btn" class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">Inscrever-se</button>
+      <button id="subscribe-btn"
+        class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">Inscrever-se</button>
       <button id="close-btn" class="mt-4 text-gray-500 hover:text-gray-700">Fechar</button>
     </div>
   </div>
 
   <nav class="bg-gradient-to-r from-[#6B1214] to-[#EC1400] border-gray-200">
     <div
-      class="fixed w-full bg-gradient-to-r from-[#6B1214] to-[#EC1400] bg-opacity-90 backdrop-blur-sm z-40 flex flex-wrap items-center justify-between mx-auto p-4"
-    >
+      class="fixed w-full bg-gradient-to-r from-[#6B1214] to-[#EC1400] bg-opacity-90 backdrop-blur-sm z-40 flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href="/~amostra/index.html"
-          ><span class="font-semibold text-xl tracking-tight"
-            >aMostra XVIII</span
-          ></a
-        >
+        <a href="/~amostra/index.html"><span class="font-semibold text-xl tracking-tight">aMostra XVIII</span></a>
       </div>
-      <button
-        onclick="toggleMenu()"
-        type="button"
+      <button onclick="toggleMenu()" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-      >
+        aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
         </svg>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="menu">
         <ul
-          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-white bg-transparent border-0"
-        >
+          class="font-medium w-full flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-white bg-transparent border-0">
           <li>
-            <a
-              href="/~amostra/index.html"
-              class="block py-2 px-3 md:p-0 hover:text-slate-400"
-              >Ínicio</a
-            >
+            <a href="/~amostra/index.html" class="block py-2 px-3 md:p-0 hover:text-slate-400">Ínicio</a>
           </li>
           <li>
-            <a
-              href="/~amostra/pages/amostra.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
-              >aMostra</a
-            >
+            <a href="/~amostra/pages/amostra.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
           </li>
           <li>
-            <a
-              href="/~amostra/pages/comissao.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
-              >Comissão</a
-            >
+            <a href="/~amostra/pages/comissao.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
           </li>
           <li>
-            <a
-              href="/~amostra/pages/patrocinadores.html"
-              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0"
-              >Parceiros</a
-            >
+            <a href="/~amostra/pages/patrocinadores.html"
+              class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
           </li>
         </ul>
       </div>
@@ -95,77 +62,52 @@
   </nav>
 
   <div
-  class="flex-grow flex items-center p-4 justify-center gap-32 h-screen bg-gradient-to-r from-[#6B1214] to-[#EC1400] pb-16 relative overflow-hidden"
->
-  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-    <img
-      src="styles/bg-vector.svg"
-      class="w-full h-auto opacity-40 rotate-[2deg] -translate-y-10 scale-125"
-      alt="Fundo decorativo"
-    />
+    class="flex-grow flex items-center p-4 justify-center gap-32 h-[90vh] md:h-screen bg-gradient-to-r from-[#6B1214] to-[#EC1400] pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 flex items-center pointer-events-none">
+      <img src="styles/bg-vector.svg" alt="Fundo decorativo" class="absolute opacity-40  -translate-y-10 scale-125
+         w-[150%] sm:w-[120%] md:w-[100%] lg:w-[90%] max-w-none z-0" />
+
+    </div>
+
+    <div class="relative z-10">
+      <h1 class="text-white text-6xl text-transparent titulo">
+        aMostra XVIII
+      </h1>
+
+      <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
+        Dê um pulinho na nossa aMostra de Estatística, um evento espetacular
+        que vai rolar de 25/08 a 29/08!
+      <div class="flex gap-4 mt-8 w-full max-w-md">
+        <a class="flex-1 block rounded border border-[#EC1400] bg-[#EC1400] px-0 py-3 text-sm font-medium text-white text-center hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 transition-colors duration-200"
+          href="#sec-3">
+          Cronograma
+        <a class="flex-1 block rounded border border-[#6B1214] px-0 py-3 text-sm font-medium text-white text-center bg-[#6B1214]/80 hover:bg-[#6B1214] focus:outline-none focus:ring active:bg-red-500 transition-colors duration-200"
+          href="/~amostra/pages/amostra.html">
+          Saiba mais
+        </a>
+      </div>
+    </div>
+    <div class="w-1/4 h-auto mb-10 md:mb-2 hidden lg:block">
+      <svg viewBox="0 0 216 113" fill="none" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" class="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+        <rect x="33" width="153" height="113" fill="url(#pattern0_75_3)" />
+        <path
+          d="M4 106.45C2.20507 106.45 0.75 107.905 0.75 109.7C0.75 111.495 2.20507 112.95 4 112.95V106.45ZM62 109.7V106.45H4V109.7V112.95H62V109.7Z"
+          fill="white" />
+        <path
+          d="M212 112.95C213.795 112.95 215.25 111.495 215.25 109.7C215.25 107.905 213.795 106.45 212 106.45V112.95ZM212 109.7V106.45H154V109.7V112.95H212V109.7Z"
+          fill="white" />
+        <defs>
+          <pattern id="pattern0_75_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_75_3" transform="matrix(0.00146628 0 0 0.00198531 0 -0.0012911)" />
+          </pattern>
+          <image id="image0_75_3" width="682" height="505" preserveAspectRatio="none"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqoAAAH5CAMAAAB+qeycAAADAFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8HPQsIAAAA/3RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QEFCQ0RFRkdISUpLTE1O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" />
+        </defs>
+      </svg>
+    </div>
+
   </div>
-
-  <div class="relative z-10 max-w-3xl text-center">
-    <h1
-      class="text-white text-3xl font-extrabold text-transparent sm:text-5xl"
-    >
-      aMostra XVIII
-    </h1>
-
-    <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white">
-      Dê um pulinho na nossa aMostra de Estatística, um evento espetacular
-      que vai rolar de 25/08 a 29/08!
-    </p>
-  </div>
-  <img
-    src="styles/logo_branco_isolado.png"
-    alt="Logo da Amostra"
-    class="w-1/6 h-auto mb-10 md:mb-2 hidden lg:block"
-  />
-</div>
-
-<a href="#sec-2"
-><svg
-  class="hidden lg:block h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce"
-  viewBox="0 -4.5 20 20"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  fill="#000000"
->
-  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-  <g
-    id="SVGRepo_tracerCarrier"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  ></g>
-  <g id="SVGRepo_iconCarrier">
-    <title>arrow_down [#338]</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
-      <g
-        id="Dribbble-Light-Preview"
-        transform="translate(-220.000000, -6684.000000)"
-        fill="#ffffff"
-      >
-        <g id="icons" transform="translate(56.000000, 160.000000)">
-          <path
-            d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
-            id="arrow_down-[#338]"
-          ></path>
-        </g>
-      </g>
-    </g>
-  </g></svg
-></a>
-
 
   <a href="#sec-2"><svg
       class="hidden lg:block h-16 w-16 absolute bottom-0 right-0 m-10 border p-4 rounded-full animate-bounce"
@@ -188,7 +130,7 @@
         </g>
       </g>
     </svg></a>
-  
+
 
 
 
@@ -197,12 +139,12 @@
   <section id="sec-2">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+        <div class="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:order-last lg:h-full">
           <img alt="" src="styles/foto_palestra.jpg" class="absolute inset-0 h-full w-full object-cover" />
         </div>
 
         <div class="lg:py-24">
-          <h2 class="text-2xl md:text-3xl font-bold sm:text-4xl">O que é aMostra?</h2>
+          <h2 class="text-3xl font-bold sm:text-4xl">O que é aMostra?</h2>
 
           <p class="mt-4 text-gray-600">
             Ah, a nossa querida aMostra! Um evento cheio de estatística, com palestras e minicursos que vão te deixar
@@ -213,32 +155,34 @@
     </div>
   </section>
 
-    <section class="bg-white-200 py-12">
-  <div id="counterContainer" class="container mx-auto px-4 flex flex-col md:flex-row justify-center gap-8 text-white text-center">
-    
-    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
-      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="300">0</span></h1>
-      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Presenças no ano<br>passado</p>
-    </div>
+  <section class="bg-white-200 py-12">
+    <div id="counterContainer"
+      class="container mx-auto px-4 flex flex-col items-center md:flex-row md:justify-center gap-8 sm:gap-16 text-white text-center">
 
-    <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
-      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="20">0</span></h1>
-      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Patrocinadores</p>
-    </div>
+      <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md flex flex-col items-center">
+        <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="300">0</span></h1>
+        <p class="mt-2 text-sm sm:text-base font-medium text-white text-center">Presenças no<br>ano passado</p>
+      </div>
 
-    <div style = "text-align: center" class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md">
-      <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="10">0</span></h1>
-      <p style = "text-align: center; color:white;" class="mt-2 text-sm sm:text-base font-medium">Palestras</p>
+      <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md flex flex-col items-center">
+        <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="20">0</span></h1>
+        <p class="mt-2 text-sm sm:text-base font-medium text-white text-center">Patrocinadores<br> no ano passado</p>
+      </div>
+
+      <div class="bg-red-600 rounded-xl px-8 py-6 w-full max-w-xs shadow-md flex flex-col items-center">
+        <h1 class="text-4xl font-extrabold">+ <span class="count" data-count="10">0</span></h1>
+        <p class="mt-2 text-sm sm:text-base font-medium text-white text-center">Palestras no<br>ano passado</p>
+      </div>
     </div>
-  </div>
-</section>
-  <div class="mx-auto bg-red-600 text-white mb-10 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
+  </section>
+  <div
+    class="mx-auto bg-red-600 text-white mb-10 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
     <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
     <div id="countdown" class="text-2xl sm:text-3xl">
-        <span id="days" class="px-1 sm:px-2">00</span> dias
-        <span id="hours" class="px-1 sm:px-2">00</span>h:
-        <span id="minutes" class="px-1 sm:px-2">00</span>m:
-        <span id="seconds" class="px-1 sm:px-2">00</span>s
+      <span id="days" class="px-1 sm:px-2">00</span> dias
+      <span id="hours" class="px-1 sm:px-2">00</span>h:
+      <span id="minutes" class="px-1 sm:px-2">00</span>m:
+      <span id="seconds" class="px-1 sm:px-2">00</span>s
     </div>
   </div>
 
@@ -247,7 +191,7 @@
       <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação da Semana</h1>
       <p style="text-align: center"> Disponível em breve.</p>
     </div>
-  </div> 
+  </div>
 
   <!-- Atualizar depois com links atualizados assim que disponível -->
 
@@ -311,8 +255,8 @@
       </div>
     </div>
   </section> -->
-  
-  
+
+
   <footer class="bg-gray-100">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="flex justify-center">
@@ -324,7 +268,7 @@
         aMostra de Estatística 2025 <br>
         © 2025 Todos os direitos reservados <br>
         <a href="/~amostra/pages/faq.html" class="underline transition hover:text-gray-500/75">
-         FAQ 
+          FAQ
         </a>
       </p>
 
@@ -435,7 +379,7 @@
     let currentIndex = 0;
     const date = new Date();
     let dia_atual = date.getDay() - 1
-    if (dia_atual >= 5|| dia_atual == -1) dia_atual = 0
+    if (dia_atual >= 5 || dia_atual == -1) dia_atual = 0
 
     currentIndex = dia_atual
     document.getElementById('next').addEventListener('click', () => {
@@ -461,43 +405,43 @@
     updateCarousel()
   </script>
 
-<script>
-  const container = document.getElementById("counterContainer");
-const counters = document.querySelectorAll(".count");
-let activated = false;
+  <script>
+    const container = document.getElementById("counterContainer");
+    const counters = document.querySelectorAll(".count");
+    let activated = false;
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !activated) {
-      counters.forEach(counter => {
-        counter.innerText = 0;
-        let count = 0;
-        const target = parseInt(counter.dataset.count);
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !activated) {
+          counters.forEach(counter => {
+            counter.innerText = 0;
+            let count = 0;
+            const target = parseInt(counter.dataset.count);
 
-        function updateCount() {
-          if (count < target) {
-            count++;
-            counter.innerText = count;
-            setTimeout(updateCount, 20); // pode ajustar a velocidade aqui
-          } else {
-            counter.innerText = target;
-          }
+            function updateCount() {
+              if (count < target) {
+                count++;
+                counter.innerText = count;
+                setTimeout(updateCount, 20); // pode ajustar a velocidade aqui
+              } else {
+                counter.innerText = target;
+              }
+            }
+
+            updateCount();
+          });
+
+          activated = true;
+          observer.unobserve(container); // para garantir que não dispara de novo
         }
-
-        updateCount();
       });
+    }, {
+      threshold: 0.5
+    });
 
-      activated = true;
-      observer.unobserve(container); // para garantir que não dispara de novo
-    }
-  });
-}, {
-  threshold: 0.5
-});
+    observer.observe(container);
 
-observer.observe(container);
-
-</script>
+  </script>
 </body>
 
 </html>
