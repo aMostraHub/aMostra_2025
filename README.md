@@ -57,7 +57,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ## Contato
 
-Para mais informações sobre o evento ou sobre o desenvolvimento do site, entre em contato através das redes sociais listadas no rodapé do site ou pelo email: amostra.estatistica@gmail.com
+Para mais informações sobre o evento ou sobre o desenvolvimento do site, entre em contato através das redes sociais listadas no rodapé do site ou pelo email: amostraimeusp@gmail.com
 
 ---
 
