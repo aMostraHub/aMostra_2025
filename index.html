@@ -55,10 +55,10 @@
             <a href="/~amostra/pages/amostra.html"
               class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">aMostra</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="/~amostra/pages/comissao.html"
               class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Comissão</a>
-          </li>
+          </li> -->
           <li>
             <a href="/~amostra/pages/patrocinadores.html"
               class="block py-2 px-3 rounded hover:text-slate-400 md:border-0 md:p-0">Parceiros</a>
@@ -140,20 +140,30 @@
 
 
 
-
-
+    
+    
+    <div
+      class="mx-auto bg-red-600 text-white m-16 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
+      <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
+      <div id="countdown" class="text-2xl sm:text-3xl">
+        <span id="days" class="px-1 sm:px-2">00</span> dias
+        <span id="hours" class="px-1 sm:px-2">00</span>h:
+        <span id="minutes" class="px-1 sm:px-2">00</span>m:
+        <span id="seconds" class="px-1 sm:px-2">00</span>s
+      </div>
+    </div>
 
   <section id="sec-2">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="mx-auto max-w-screen-xl px-4 pb-8 sm:px-6 sm:pb-12">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div class="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:order-last lg:h-full">
           <img alt="" src="styles/foto_palestra.jpg" class="absolute inset-0 h-full w-full object-cover" />
         </div>
-
+        
         <div class="lg:py-24">
           <h2 class="text-3xl font-bold sm:text-4xl">O que é aMostra?</h2>
 
-          <p class="mt-4 text-gray-600">
+          <p class="m-4 text-gray-600">
             Ah, a nossa querida aMostra! Um evento cheio de estatística, com palestras e minicursos que vão te deixar
             animado para explorar o mundo dos dados!
           </p>
@@ -161,7 +171,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="bg-white-200 py-12">
     <div id="counterContainer"
       class="container mx-auto px-4 flex flex-col items-center md:flex-row md:justify-center gap-8 sm:gap-16 text-white text-center">
@@ -182,23 +192,358 @@
       </div>
     </div>
   </section>
-  <div
-    class="mx-auto bg-red-600 text-white mb-10 p-6 md:p-10 rounded-lg shadow-md text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
-    <h1 class="text-xl sm:text-2xl mb-4">Só faltam alguns dias até a aMostra!</h1>
-    <div id="countdown" class="text-2xl sm:text-3xl">
-      <span id="days" class="px-1 sm:px-2">00</span> dias
-      <span id="hours" class="px-1 sm:px-2">00</span>h:
-      <span id="minutes" class="px-1 sm:px-2">00</span>m:
-      <span id="seconds" class="px-1 sm:px-2">00</span>s
+
+  <div class="container mx-auto py-8 px-4 md:px-44">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex justify-between mb-4">
+        <button id="prev" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <h2 id="day-title" class="text-2xl font-bold">Segunda-feira</h2>
+        <button id="next" class="px-2 md:px-4 md:py-1 bg-red-500 text-white rounded hover:bg-red-700">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="carousel" class="overflow-hidden relative">
+        <div class="flex transition-transform duration-500">
+          <!-- Segunda-feira -->
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">8:30</td>
+                  <td class="py-2 ps-6">
+                    <strong>Da Estatística ao Letramento Estatístico: uma jornada nada aleatória!</strong><br>
+                    Luciana Neves Nunes
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">9:30</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>De tédio não se morre!</strong><br>
+                    Suzi Alves Camey
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>O que a Estatística pode nos revelar sobre como os neurônios se comunicam?</strong><br>
+                    Ricardo Felipe Ferreira
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">12:00</td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Almoço</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Management Solutions
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    SPC
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">16:00
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          
+
+
+          <!-- Adicione mais dias aqui -->
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">8:30</td>
+                  <td class="py-2 ps-6">
+                    <strong>Projeto Ditadura BR: Memória, Verdade e Justiça pela construção de um banco de dados sobre graves violações de direitos humanos a partir do relatório da Comissão Nacional da Verdade</strong><br>
+                    Vinicius Pinheiro Israel
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">9:30</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>Baixo número de formandos não supre o mercado em expansão. É preocupante?</strong><br>
+                    Doris Fontes
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>Testes de hipóteses em modelos de contagem</strong><br>
+                    Daiane de Souza Santos
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">12:00</td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Almoço</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    C6 Bank
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Santander
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">8:30</td>
+                  <td class="py-2 ps-6">
+                    <strong>Modelos de escore autorregressivo generalizado para o monitoramento de cultivos de soja por meio de imagens de satélite</strong><br>
+                    Renata Rojas Guerra
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">9:30</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>Modelos Bayesianos Hierárquicos Aplicados à Previsão Esportiva</strong><br>
+                    Luis Ernesto Bueno Salasar
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>A definir</strong><br>
+                    Julio Trecenti
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Almoço</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Casio
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    FGV
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">8:30</td>
+                  <td class="py-2 ps-6">
+                    <strong>Discutindo o modelo estatístico baseado no artigo: Statistical Modeling</strong><br>
+                    Camila Xavier Sá Peixoto Pinheiro
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">9:30</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>Redes de Afinidade</strong><br>
+                    Denise Duarte
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>A Estatística Para Além dos Muros da Universidade</strong><br>
+                    Verónica Andrea González-López
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">11:00</td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Almoço</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">14:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Insper
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">15:00</td>
+                  <td class="md:py-6 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    CEA
+                  </td>
+                </tr>
+                <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+
+
+          <div class="min-w-full md:p-4">
+            <table class="min-w-full bg-white" style="border-spacing : 0 0.8rem; border-collapse: separate;">
+              <thead>
+                <tr>
+                  <th class="py-2 text-lg w-1/5 md:w-1/6">Hora</th>
+                  <th class="py-2 text-lg ">Atividade</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">8:30</td>
+                  <td class="py-2 ps-6">
+                    <strong>PALESTRA</strong><br>
+                    Fernanda Staniscuaski + Daniele Honorato
+                  </td>
+                </tr>
+              </tbody>
+              <tr>
+                  <td class="rounded-s-2xl bg-gray-300 py-2 md:py-6 px-2 md:px-10 w-1/5 md:w-1/6">10:30
+                  </td>
+                  <td class="rounded-e-2xl bg-gray-300 py-2 md:py-6 ps-6">
+                    <!-- Espaço vazio para intervalo -->
+                     <strong>Coffee Break</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-2 md:px-10 w-1/5 md:w-1/6">10:00</td>
+                  <td class="py-2 ps-6">
+                    <strong>Mesa Redonda</strong><br>
+                    Fernanda Staniscuaski, Adriana Bruscato, Juliana Diniz e Daniele Honorato
+                  </td>
+                </tr>
+              </tbody>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <!--  -->
+        </div>
+        
+      </div>
     </div>
   </div>
 
-  <div class="container mx-auto py-8 px-4 md:px-44">
-    <div class="bg-white p-6 rounded-lg shadow-lg border">
-      <h1 id="sec-3" class="pt-6 pb-10 text-2xl md:text-4xl text-center font-bold">Programação da Semana</h1>
-      <p style="text-align: center"> Disponível em breve.</p>
-    </div>
-  </div>
 
   <!-- Atualizar depois com links atualizados assim que disponível -->
 
@@ -281,7 +626,7 @@
 
       <ul class="mt-10 flex justify-center gap-6 md:gap-8">
         <li>
-          <a href="https://www.facebook.com/aMostraEstatistica/?locale=pt" rel="noreferrer" target="_blank"
+          <a href="https://www.facebook.com/aMostra.de.Estatistica/" rel="noreferrer" target="_blank"
             class="text-gray-700 transition hover:text-gray-700/75">
             <span class="sr-only">Facebook</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0,0,256,256">
@@ -320,7 +665,7 @@
 
 
         <li>
-          <a href="https://www.youtube.com/channel/UCargFh7dj6ZtDcCNlw30F-w" rel="noreferrer" target="_blank"
+          <a href="https://www.youtube.com/@aMostra-de-Estatistica" rel="noreferrer" target="_blank"
             class="text-gray-700 transition hover:text-gray-700/75">
             <span class="sr-only">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 256 256">
